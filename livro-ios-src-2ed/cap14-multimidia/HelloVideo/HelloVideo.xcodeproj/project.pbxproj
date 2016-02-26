@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD7C172217F5BA2A0018A8E0 /* VideoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7C172117F5BA2A0018A8E0 /* VideoUtil.m */; };
+		DDA0084017D22ADB0049F51C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA0083F17D22ADB0049F51C /* Foundation.framework */; };
+		DDA0084217D22ADB0049F51C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA0084117D22ADB0049F51C /* CoreGraphics.framework */; };
+		DDA0084417D22ADB0049F51C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA0084317D22ADB0049F51C /* UIKit.framework */; };
+		DDA0084A17D22ADB0049F51C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA0084817D22ADB0049F51C /* InfoPlist.strings */; };
+		DDA0084C17D22ADB0049F51C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA0084B17D22ADB0049F51C /* main.m */; };
+		DDA0085017D22ADB0049F51C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA0084F17D22ADB0049F51C /* AppDelegate.m */; };
+		DDA0085317D22ADB0049F51C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA0085117D22ADB0049F51C /* Main.storyboard */; };
+		DDA0085617D22ADB0049F51C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA0085517D22ADB0049F51C /* ViewController.m */; };
+		DDA0085817D22ADB0049F51C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA0085717D22ADB0049F51C /* Images.xcassets */; };
+		DDA0085F17D22ADB0049F51C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA0085E17D22ADB0049F51C /* XCTest.framework */; };
+		DDA0086017D22ADB0049F51C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA0083F17D22ADB0049F51C /* Foundation.framework */; };
+		DDA0086117D22ADB0049F51C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA0084317D22ADB0049F51C /* UIKit.framework */; };
+		DDA0086917D22ADB0049F51C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDA0086717D22ADB0049F51C /* InfoPlist.strings */; };
+		DDA0086B17D22ADB0049F51C /* HelloVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA0086A17D22ADB0049F51C /* HelloVideoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDA0086217D22ADB0049F51C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDA0083417D22ADB0049F51C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDA0083B17D22ADB0049F51C;
+			remoteInfo = HelloVideo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD7C172017F5BA2A0018A8E0 /* VideoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoUtil.h; sourceTree = "<group>"; };
+		DD7C172117F5BA2A0018A8E0 /* VideoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoUtil.m; sourceTree = "<group>"; };
+		DDA0083C17D22ADB0049F51C /* HelloVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA0083F17D22ADB0049F51C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DDA0084117D22ADB0049F51C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DDA0084317D22ADB0049F51C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DDA0084717D22ADB0049F51C /* HelloVideo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloVideo-Info.plist"; sourceTree = "<group>"; };
+		DDA0084917D22ADB0049F51C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDA0084B17D22ADB0049F51C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDA0084D17D22ADB0049F51C /* HelloVideo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloVideo-Prefix.pch"; sourceTree = "<group>"; };
+		DDA0084E17D22ADB0049F51C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDA0084F17D22ADB0049F51C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDA0085217D22ADB0049F51C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDA0085417D22ADB0049F51C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DDA0085517D22ADB0049F51C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DDA0085717D22ADB0049F51C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DDA0085D17D22ADB0049F51C /* HelloVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA0085E17D22ADB0049F51C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DDA0086617D22ADB0049F51C /* HelloVideoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloVideoTests-Info.plist"; sourceTree = "<group>"; };
+		DDA0086817D22ADB0049F51C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDA0086A17D22ADB0049F51C /* HelloVideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloVideoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDA0083917D22ADB0049F51C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA0084217D22ADB0049F51C /* CoreGraphics.framework in Frameworks */,
+				DDA0084417D22ADB0049F51C /* UIKit.framework in Frameworks */,
+				DDA0084017D22ADB0049F51C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA0085A17D22ADB0049F51C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA0085F17D22ADB0049F51C /* XCTest.framework in Frameworks */,
+				DDA0086117D22ADB0049F51C /* UIKit.framework in Frameworks */,
+				DDA0086017D22ADB0049F51C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDA0083317D22ADB0049F51C = {
+			isa = PBXGroup;
+			children = (
+				DDA0084517D22ADB0049F51C /* HelloVideo */,
+				DDA0086417D22ADB0049F51C /* HelloVideoTests */,
+				DDA0083E17D22ADB0049F51C /* Frameworks */,
+				DDA0083D17D22ADB0049F51C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDA0083D17D22ADB0049F51C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDA0083C17D22ADB0049F51C /* HelloVideo.app */,
+				DDA0085D17D22ADB0049F51C /* HelloVideoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDA0083E17D22ADB0049F51C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDA0083F17D22ADB0049F51C /* Foundation.framework */,
+				DDA0084117D22ADB0049F51C /* CoreGraphics.framework */,
+				DDA0084317D22ADB0049F51C /* UIKit.framework */,
+				DDA0085E17D22ADB0049F51C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDA0084517D22ADB0049F51C /* HelloVideo */ = {
+			isa = PBXGroup;
+			children = (
+				DDA0084E17D22ADB0049F51C /* AppDelegate.h */,
+				DDA0084F17D22ADB0049F51C /* AppDelegate.m */,
+				DDA0085117D22ADB0049F51C /* Main.storyboard */,
+				DDA0085417D22ADB0049F51C /* ViewController.h */,
+				DDA0085517D22ADB0049F51C /* ViewController.m */,
+				DD7C172017F5BA2A0018A8E0 /* VideoUtil.h */,
+				DD7C172117F5BA2A0018A8E0 /* VideoUtil.m */,
+				DDA0085717D22ADB0049F51C /* Images.xcassets */,
+				DDA0084617D22ADB0049F51C /* Supporting Files */,
+			);
+			path = HelloVideo;
+			sourceTree = "<group>";
+		};
+		DDA0084617D22ADB0049F51C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDA0084717D22ADB0049F51C /* HelloVideo-Info.plist */,
+				DDA0084817D22ADB0049F51C /* InfoPlist.strings */,
+				DDA0084B17D22ADB0049F51C /* main.m */,
+				DDA0084D17D22ADB0049F51C /* HelloVideo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDA0086417D22ADB0049F51C /* HelloVideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDA0086A17D22ADB0049F51C /* HelloVideoTests.m */,
+				DDA0086517D22ADB0049F51C /* Supporting Files */,
+			);
+			path = HelloVideoTests;
+			sourceTree = "<group>";
+		};
+		DDA0086517D22ADB0049F51C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDA0086617D22ADB0049F51C /* HelloVideoTests-Info.plist */,
+				DDA0086717D22ADB0049F51C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDA0083B17D22ADB0049F51C /* HelloVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA0086E17D22ADB0049F51C /* Build configuration list for PBXNativeTarget "HelloVideo" */;
+			buildPhases = (
+				DDA0083817D22ADB0049F51C /* Sources */,
+				DDA0083917D22ADB0049F51C /* Frameworks */,
+				DDA0083A17D22ADB0049F51C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloVideo;
+			productName = HelloVideo;
+			productReference = DDA0083C17D22ADB0049F51C /* HelloVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDA0085C17D22ADB0049F51C /* HelloVideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA0087117D22ADB0049F51C /* Build configuration list for PBXNativeTarget "HelloVideoTests" */;
+			buildPhases = (
+				DDA0085917D22ADB0049F51C /* Sources */,
+				DDA0085A17D22ADB0049F51C /* Frameworks */,
+				DDA0085B17D22ADB0049F51C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDA0086317D22ADB0049F51C /* PBXTargetDependency */,
+			);
+			name = HelloVideoTests;
+			productName = HelloVideoTests;
+			productReference = DDA0085D17D22ADB0049F51C /* HelloVideoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDA0083417D22ADB0049F51C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Ricardo Lecheta";
+				TargetAttributes = {
+					DDA0085C17D22ADB0049F51C = {
+						TestTargetID = DDA0083B17D22ADB0049F51C;
+					};
+				};
+			};
+			buildConfigurationList = DDA0083717D22ADB0049F51C /* Build configuration list for PBXProject "HelloVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDA0083317D22ADB0049F51C;
+			productRefGroup = DDA0083D17D22ADB0049F51C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDA0083B17D22ADB0049F51C /* HelloVideo */,
+				DDA0085C17D22ADB0049F51C /* HelloVideoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDA0083A17D22ADB0049F51C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA0085817D22ADB0049F51C /* Images.xcassets in Resources */,
+				DDA0084A17D22ADB0049F51C /* InfoPlist.strings in Resources */,
+				DDA0085317D22ADB0049F51C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA0085B17D22ADB0049F51C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA0086917D22ADB0049F51C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDA0083817D22ADB0049F51C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA0085617D22ADB0049F51C /* ViewController.m in Sources */,
+				DDA0085017D22ADB0049F51C /* AppDelegate.m in Sources */,
+				DDA0084C17D22ADB0049F51C /* main.m in Sources */,
+				DD7C172217F5BA2A0018A8E0 /* VideoUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA0085917D22ADB0049F51C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA0086B17D22ADB0049F51C /* HelloVideoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDA0086317D22ADB0049F51C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDA0083B17D22ADB0049F51C /* HelloVideo */;
+			targetProxy = DDA0086217D22ADB0049F51C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDA0084817D22ADB0049F51C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDA0084917D22ADB0049F51C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DDA0085117D22ADB0049F51C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDA0085217D22ADB0049F51C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDA0086717D22ADB0049F51C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDA0086817D22ADB0049F51C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDA0086C17D22ADB0049F51C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DDA0086D17D22ADB0049F51C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDA0086F17D22ADB0049F51C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloVideo/HelloVideo-Prefix.pch";
+				INFOPLIST_FILE = "HelloVideo/HelloVideo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DDA0087017D22ADB0049F51C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloVideo/HelloVideo-Prefix.pch";
+				INFOPLIST_FILE = "HelloVideo/HelloVideo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DDA0087217D22ADB0049F51C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloVideo.app/HelloVideo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloVideo/HelloVideo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HelloVideoTests/HelloVideoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DDA0087317D22ADB0049F51C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloVideo.app/HelloVideo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloVideo/HelloVideo-Prefix.pch";
+				INFOPLIST_FILE = "HelloVideoTests/HelloVideoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDA0083717D22ADB0049F51C /* Build configuration list for PBXProject "HelloVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA0086C17D22ADB0049F51C /* Debug */,
+				DDA0086D17D22ADB0049F51C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDA0086E17D22ADB0049F51C /* Build configuration list for PBXNativeTarget "HelloVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA0086F17D22ADB0049F51C /* Debug */,
+				DDA0087017D22ADB0049F51C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDA0087117D22ADB0049F51C /* Build configuration list for PBXNativeTarget "HelloVideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA0087217D22ADB0049F51C /* Debug */,
+				DDA0087317D22ADB0049F51C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDA0083417D22ADB0049F51C /* Project object */;
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListaCarrosViewController">
+            <connections>
+                <outlet property="progress" destination="DRo-FL-G2K" id="s1k-Th-VMb"/>
+                <outlet property="tableView" destination="b9g-e4-XDF" id="Thz-yr-IQU"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="b9g-e4-XDF">
+                    <rect key="frame" x="0.0" y="106" width="320" height="464"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="L7Y-Gs-bmO"/>
+                        <outlet property="delegate" destination="-1" id="NPd-p5-4fh"/>
+                    </connections>
+                </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KdD-pD-i5M">
+                    <rect key="frame" x="42" y="70" width="236" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="Clássicos"/>
+                        <segment title="Esportivos"/>
+                        <segment title="Luxo"/>
+                    </segments>
+                    <connections>
+                        <action selector="alterarTipo:" destination="-1" eventType="valueChanged" id="L4G-CC-NQ7"/>
+                    </connections>
+                </segmentedControl>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="DRo-FL-G2K">
+                    <rect key="frame" x="150" y="230" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="b9g-e4-XDF" secondAttribute="trailing" id="95g-gZ-ng4"/>
+                <constraint firstItem="DRo-FL-G2K" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="Aar-XV-7ct"/>
+                <constraint firstItem="b9g-e4-XDF" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="DuN-5l-PSt"/>
+                <constraint firstItem="b9g-e4-XDF" firstAttribute="centerX" secondItem="DRo-FL-G2K" secondAttribute="centerX" id="EdT-qH-gwA"/>
+                <constraint firstItem="KdD-pD-i5M" firstAttribute="top" secondItem="1" secondAttribute="top" constant="70" id="GAM-St-w7g"/>
+                <constraint firstItem="b9g-e4-XDF" firstAttribute="centerX" secondItem="KdD-pD-i5M" secondAttribute="centerX" id="Nuk-Qp-Rkx"/>
+                <constraint firstAttribute="bottom" secondItem="b9g-e4-XDF" secondAttribute="bottom" constant="-90" id="gbl-1W-37e"/>
+                <constraint firstItem="b9g-e4-XDF" firstAttribute="top" secondItem="KdD-pD-i5M" secondAttribute="bottom" constant="8" id="xhN-jW-I28"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
