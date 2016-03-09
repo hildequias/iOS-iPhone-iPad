@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo_Auto_Layout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="0qV-2a-N7E" userLabel="ImageView">
+                                <rect key="frame" x="150" y="20" width="300" height="197"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOm-vO-k4P" userLabel="BlackView">
+                                <rect key="frame" x="0.0" y="237" width="600" height="343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="São Paulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIF-tP-4QQ">
+                                        <rect key="frame" x="-17.5" y="10" width="635" height="177"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jge-MN-PAF">
+                                        <rect key="frame" x="38.5" y="38" width="523.5" height="295"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hIF-tP-4QQ" firstAttribute="top" secondItem="TOm-vO-k4P" secondAttribute="top" constant="10" id="JS8-qb-hX2"/>
+                                    <constraint firstItem="hIF-tP-4QQ" firstAttribute="centerX" secondItem="TOm-vO-k4P" secondAttribute="centerX" id="Utf-m7-UN3"/>
+                                    <constraint firstItem="Jge-MN-PAF" firstAttribute="centerX" secondItem="TOm-vO-k4P" secondAttribute="centerX" id="bt6-4d-oey"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jge-MN-PAF" secondAttribute="bottom" constant="10" id="udW-Ng-cF6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TOm-vO-k4P" secondAttribute="trailing" id="OgM-Ll-FYv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TOm-vO-k4P" secondAttribute="bottom" constant="20" id="dHL-nV-ITv"/>
+                            <constraint firstItem="TOm-vO-k4P" firstAttribute="top" secondItem="0qV-2a-N7E" secondAttribute="bottom" constant="20" id="hDr-8A-1FD"/>
+                            <constraint firstItem="0qV-2a-N7E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iSM-de-tGh"/>
+                            <constraint firstItem="0qV-2a-N7E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pox-kL-aXi"/>
+                            <constraint firstItem="TOm-vO-k4P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rfi-n0-u1P"/>
+                            <constraint firstItem="0qV-2a-N7E" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="vjd-lt-cY5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud" width="300" height="197"/>
+    </resources>
+</document>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo_WebView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BhP-hK-11F">
+                                <rect key="frame" x="0.0" y="116" width="600" height="484"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vsi-hc-BbM"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fy8-Yu-HwK">
+                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="hyw-hC-0OF">
+                                        <connections>
+                                            <action selector="goBack" destination="BhP-hK-11F" id="Nek-1G-8Ou"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="jlb-m8-AEu">
+                                        <connections>
+                                            <action selector="goForward" destination="BhP-hK-11F" id="orx-8b-qQc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="FL7-di-i3H"/>
+                                    <barButtonItem style="plain" id="Hdj-fP-Xi8">
+                                        <searchBar key="customView" contentMode="redraw" id="u8a-y2-kKq">
+                                            <rect key="frame" x="168" y="0.0" width="357" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="BYZ-38-t0r" id="O3S-bh-svx"/>
+                                            </connections>
+                                        </searchBar>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="stop" id="dbK-na-DfM">
+                                        <connections>
+                                            <action selector="stopLoading" destination="BhP-hK-11F" id="wQD-J2-8h4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="refresh" id="Q99-Li-73v">
+                                        <connections>
+                                            <action selector="reload" destination="BhP-hK-11F" id="gFR-wY-hNM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="XD4-J0-kBG">
+                                <rect key="frame" x="290" y="333" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="0ov-m2-dmP"/>
+                                    <constraint firstAttribute="width" constant="20" id="9lo-58-aY6"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fy8-Yu-HwK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="52" id="5TR-5w-1km"/>
+                            <constraint firstItem="XD4-J0-kBG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="43" id="727-sj-kRt"/>
+                            <constraint firstItem="BhP-hK-11F" firstAttribute="top" secondItem="Fy8-Yu-HwK" secondAttribute="bottom" id="LeR-75-WX8"/>
+                            <constraint firstItem="XD4-J0-kBG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TGO-TC-dvz"/>
+                            <constraint firstAttribute="trailing" secondItem="BhP-hK-11F" secondAttribute="trailing" id="UpL-Dz-ehn"/>
+                            <constraint firstAttribute="trailing" secondItem="Fy8-Yu-HwK" secondAttribute="trailing" id="cWR-DE-sv9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BhP-hK-11F" secondAttribute="bottom" id="eec-ph-6Ku"/>
+                            <constraint firstItem="Fy8-Yu-HwK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qKc-oX-4CV"/>
+                            <constraint firstItem="BhP-hK-11F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yyD-6A-Q5R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="seachBar" destination="u8a-y2-kKq" id="ok4-1n-PFO"/>
+                        <outlet property="searchDisplayController" destination="e5x-cZ-JvR" id="shc-Mb-9hP"/>
+                        <outlet property="webView" destination="BhP-hK-11F" id="ysf-hg-jgB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Ukg-0N-WNw">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="1dI-ua-Xup"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="Fib-Yk-OtL"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="tHl-Gb-1I9"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="zIK-Ns-tLO"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="e5x-cZ-JvR">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="o5F-qw-21l"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="IDi-QI-cgh"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="zaA-vg-a8x"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="Wp6-Ne-ufh"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="340" y="366"/>
+        </scene>
+    </scenes>
+</document>
