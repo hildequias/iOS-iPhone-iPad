@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sonic1" translatesAutoresizingMaskIntoConstraints="NO" id="L9w-Hb-dc7">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="HZi-YE-M4D"/>
+                                    <constraint firstAttribute="height" constant="128" id="etE-IL-9xb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9x-F6-JdE">
+                                <rect key="frame" x="162" y="372" width="40" height="30"/>
+                                <state key="normal" title="Saltar"/>
+                                <connections>
+                                    <action selector="saltar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hgL-B3-1CN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75E-yn-REL">
+                                <rect key="frame" x="401" y="372" width="34" height="30"/>
+                                <state key="normal" title="Girar"/>
+                                <connections>
+                                    <action selector="girar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n6t-Bt-Bb7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kK-Q7-J5M">
+                                <rect key="frame" x="278" y="372" width="44" height="30"/>
+                                <state key="normal" title="Correr"/>
+                                <connections>
+                                    <action selector="correr:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3X9-V8-g8z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c9x-F6-JdE" firstAttribute="top" secondItem="L9w-Hb-dc7" secondAttribute="bottom" constant="8" id="3nc-cs-oL3"/>
+                            <constraint firstItem="c9x-F6-JdE" firstAttribute="top" secondItem="L9w-Hb-dc7" secondAttribute="bottom" constant="8" id="4He-k9-dOd"/>
+                            <constraint firstItem="75E-yn-REL" firstAttribute="leading" secondItem="L9w-Hb-dc7" secondAttribute="trailing" constant="-19" id="9fT-VJ-2B8"/>
+                            <constraint firstItem="L9w-Hb-dc7" firstAttribute="leading" secondItem="c9x-F6-JdE" secondAttribute="trailing" constant="-22" id="B5o-ht-sOk"/>
+                            <constraint firstItem="75E-yn-REL" firstAttribute="top" secondItem="L9w-Hb-dc7" secondAttribute="bottom" constant="8" id="BFt-2j-lEs"/>
+                            <constraint firstItem="L9w-Hb-dc7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Suy-zR-nIN"/>
+                            <constraint firstItem="5kK-Q7-J5M" firstAttribute="top" secondItem="L9w-Hb-dc7" secondAttribute="bottom" constant="8" id="cai-Za-WF8"/>
+                            <constraint firstItem="5kK-Q7-J5M" firstAttribute="leading" secondItem="L9w-Hb-dc7" secondAttribute="leading" id="dle-hq-wRj"/>
+                            <constraint firstItem="L9w-Hb-dc7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hWL-4y-KBY"/>
+                            <constraint firstItem="5kK-Q7-J5M" firstAttribute="centerX" secondItem="L9w-Hb-dc7" secondAttribute="centerX" id="pXg-9V-ef3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4He-k9-dOd"/>
+                                <exclude reference="dle-hq-wRj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imgSonic" destination="L9w-Hb-dc7" id="zg3-ru-QM4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sonic1" width="40" height="40"/>
+    </resources>
+</document>
