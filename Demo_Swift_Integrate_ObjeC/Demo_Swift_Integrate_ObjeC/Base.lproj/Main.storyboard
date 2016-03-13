@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo_Swift_Integrate_ObjeC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dz3-Pi-F7x">
+                                <rect key="frame" x="111" y="56" width="378" height="235"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Resultado" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dpy-NH-fZT">
+                                        <rect key="frame" x="0.0" y="197" width="378" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMx-WA-Jd6">
+                                        <rect key="frame" x="63" y="103" width="45" height="30"/>
+                                        <state key="normal" title="Somar"/>
+                                        <connections>
+                                            <action selector="somar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="39N-C7-7zy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bx5-2x-huS">
+                                        <rect key="frame" x="260" y="103" width="55" height="30"/>
+                                        <state key="normal" title="Subtrair"/>
+                                        <connections>
+                                            <action selector="subtrair:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8W-CW-gPA"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Valor 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hV2-8T-PSm">
+                                        <rect key="frame" x="37" y="8" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="CFB-Cr-gdw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Valor 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NjR-4l-Z4G">
+                                        <rect key="frame" x="246" y="8" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="UP1-OC-2r6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hV2-8T-PSm" firstAttribute="top" secondItem="Dz3-Pi-F7x" secondAttribute="top" constant="8" id="2dV-BY-MPT"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dpy-NH-fZT" secondAttribute="bottom" constant="8" id="3O6-wP-X6X"/>
+                                    <constraint firstItem="bx5-2x-huS" firstAttribute="top" secondItem="NjR-4l-Z4G" secondAttribute="bottom" constant="65" id="4ya-LR-bZ7"/>
+                                    <constraint firstItem="Dpy-NH-fZT" firstAttribute="leading" secondItem="Dz3-Pi-F7x" secondAttribute="leading" id="8aO-JG-qqf"/>
+                                    <constraint firstAttribute="trailing" secondItem="NjR-4l-Z4G" secondAttribute="trailing" constant="35" id="Abb-bB-RRA"/>
+                                    <constraint firstAttribute="height" constant="235" id="Bqm-zi-vlC"/>
+                                    <constraint firstAttribute="width" constant="378" id="F8o-UJ-7at"/>
+                                    <constraint firstAttribute="trailing" secondItem="bx5-2x-huS" secondAttribute="trailing" constant="63" id="NKo-h4-3aU"/>
+                                    <constraint firstItem="DMx-WA-Jd6" firstAttribute="leading" secondItem="Dz3-Pi-F7x" secondAttribute="leading" constant="63" id="Phb-eT-6hd"/>
+                                    <constraint firstItem="Dpy-NH-fZT" firstAttribute="top" secondItem="bx5-2x-huS" secondAttribute="bottom" constant="64" id="U6e-De-D4R"/>
+                                    <constraint firstItem="Dpy-NH-fZT" firstAttribute="top" secondItem="DMx-WA-Jd6" secondAttribute="bottom" constant="64" id="cAj-f9-iJg"/>
+                                    <constraint firstItem="DMx-WA-Jd6" firstAttribute="top" secondItem="hV2-8T-PSm" secondAttribute="bottom" constant="65" id="jEG-ld-Z2U"/>
+                                    <constraint firstItem="NjR-4l-Z4G" firstAttribute="top" secondItem="Dz3-Pi-F7x" secondAttribute="top" constant="8" id="tnp-Sg-4gf"/>
+                                    <constraint firstItem="hV2-8T-PSm" firstAttribute="leading" secondItem="Dz3-Pi-F7x" secondAttribute="leading" constant="37" id="vXB-se-iQG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dpy-NH-fZT" secondAttribute="trailing" id="zc4-qY-DhC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dz3-Pi-F7x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oi2-7e-iiZ"/>
+                            <constraint firstItem="Dz3-Pi-F7x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="111" id="d9P-S3-P5q"/>
+                            <constraint firstAttribute="trailing" secondItem="Dz3-Pi-F7x" secondAttribute="trailing" constant="111" id="nFh-RJ-2pu"/>
+                            <constraint firstItem="Dz3-Pi-F7x" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="wkH-Rw-Qsf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="d9P-S3-P5q"/>
+                                <exclude reference="nFh-RJ-2pu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="resultado" destination="Dpy-NH-fZT" id="C6a-YV-f2C"/>
+                        <outlet property="valor1" destination="hV2-8T-PSm" id="K3n-m7-9aI"/>
+                        <outlet property="valor2" destination="NjR-4l-Z4G" id="Y6r-Sw-RpD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="363"/>
+        </scene>
+    </scenes>
+</document>
