@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC01185E1C94436F008DC3F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01185D1C94436F008DC3F0 /* AppDelegate.swift */; };
+		AC0118601C94436F008DC3F0 /* HJMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01185F1C94436F008DC3F0 /* HJMapViewController.swift */; };
+		AC0118631C94436F008DC3F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0118611C94436F008DC3F0 /* Main.storyboard */; };
+		AC0118651C94436F008DC3F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0118641C94436F008DC3F0 /* Assets.xcassets */; };
+		AC0118681C94436F008DC3F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0118661C94436F008DC3F0 /* LaunchScreen.storyboard */; };
+		AC0118701C944447008DC3F0 /* HJDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01186F1C944447008DC3F0 /* HJDetailViewController.swift */; };
+		AC0118721C944606008DC3F0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC0118711C944606008DC3F0 /* MapKit.framework */; };
+		AC0118741C9449DA008DC3F0 /* HJLocationVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0118731C9449DA008DC3F0 /* HJLocationVO.swift */; };
+		AC0118761C945393008DC3F0 /* HJLocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0118751C945393008DC3F0 /* HJLocationAnnotation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC01185A1C94436F008DC3F0 /* HJGuia Turismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HJGuia Turismo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC01185D1C94436F008DC3F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC01185F1C94436F008DC3F0 /* HJMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJMapViewController.swift; sourceTree = "<group>"; };
+		AC0118621C94436F008DC3F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC0118641C94436F008DC3F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC0118671C94436F008DC3F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC0118691C94436F008DC3F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC01186F1C944447008DC3F0 /* HJDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJDetailViewController.swift; sourceTree = "<group>"; };
+		AC0118711C944606008DC3F0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AC0118731C9449DA008DC3F0 /* HJLocationVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJLocationVO.swift; sourceTree = "<group>"; };
+		AC0118751C945393008DC3F0 /* HJLocationAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJLocationAnnotation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC0118571C94436E008DC3F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0118721C944606008DC3F0 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC0118511C94436E008DC3F0 = {
+			isa = PBXGroup;
+			children = (
+				AC0118711C944606008DC3F0 /* MapKit.framework */,
+				AC01185C1C94436F008DC3F0 /* HJGuia Turismo */,
+				AC01185B1C94436F008DC3F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC01185B1C94436F008DC3F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC01185A1C94436F008DC3F0 /* HJGuia Turismo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC01185C1C94436F008DC3F0 /* HJGuia Turismo */ = {
+			isa = PBXGroup;
+			children = (
+				AC01185D1C94436F008DC3F0 /* AppDelegate.swift */,
+				AC01185F1C94436F008DC3F0 /* HJMapViewController.swift */,
+				AC01186F1C944447008DC3F0 /* HJDetailViewController.swift */,
+				AC0118611C94436F008DC3F0 /* Main.storyboard */,
+				AC0118641C94436F008DC3F0 /* Assets.xcassets */,
+				AC0118661C94436F008DC3F0 /* LaunchScreen.storyboard */,
+				AC0118691C94436F008DC3F0 /* Info.plist */,
+				AC0118731C9449DA008DC3F0 /* HJLocationVO.swift */,
+				AC0118751C945393008DC3F0 /* HJLocationAnnotation.swift */,
+			);
+			path = "HJGuia Turismo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC0118591C94436E008DC3F0 /* HJGuia Turismo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC01186C1C94436F008DC3F0 /* Build configuration list for PBXNativeTarget "HJGuia Turismo" */;
+			buildPhases = (
+				AC0118561C94436E008DC3F0 /* Sources */,
+				AC0118571C94436E008DC3F0 /* Frameworks */,
+				AC0118581C94436E008DC3F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HJGuia Turismo";
+			productName = "HJGuia Turismo";
+			productReference = AC01185A1C94436F008DC3F0 /* HJGuia Turismo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC0118521C94436E008DC3F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = pixonsoft;
+				TargetAttributes = {
+					AC0118591C94436E008DC3F0 = {
+						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = AC0118551C94436E008DC3F0 /* Build configuration list for PBXProject "HJGuia Turismo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC0118511C94436E008DC3F0;
+			productRefGroup = AC01185B1C94436F008DC3F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC0118591C94436E008DC3F0 /* HJGuia Turismo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC0118581C94436E008DC3F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0118681C94436F008DC3F0 /* LaunchScreen.storyboard in Resources */,
+				AC0118651C94436F008DC3F0 /* Assets.xcassets in Resources */,
+				AC0118631C94436F008DC3F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC0118561C94436E008DC3F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0118701C944447008DC3F0 /* HJDetailViewController.swift in Sources */,
+				AC0118741C9449DA008DC3F0 /* HJLocationVO.swift in Sources */,
+				AC0118601C94436F008DC3F0 /* HJMapViewController.swift in Sources */,
+				AC01185E1C94436F008DC3F0 /* AppDelegate.swift in Sources */,
+				AC0118761C945393008DC3F0 /* HJLocationAnnotation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC0118611C94436F008DC3F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0118621C94436F008DC3F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC0118661C94436F008DC3F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0118671C94436F008DC3F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC01186A1C94436F008DC3F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC01186B1C94436F008DC3F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC01186D1C94436F008DC3F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "HJGuia Turismo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pixonsoft.HJGuia-Turismo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC01186E1C94436F008DC3F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "HJGuia Turismo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pixonsoft.HJGuia-Turismo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC0118551C94436E008DC3F0 /* Build configuration list for PBXProject "HJGuia Turismo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC01186A1C94436F008DC3F0 /* Debug */,
+				AC01186B1C94436F008DC3F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC01186C1C94436F008DC3F0 /* Build configuration list for PBXNativeTarget "HJGuia Turismo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC01186D1C94436F008DC3F0 /* Debug */,
+				AC01186E1C94436F008DC3F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC0118521C94436E008DC3F0 /* Project object */;
+}
